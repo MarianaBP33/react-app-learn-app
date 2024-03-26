@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import LoginForm from "./components/LoginForm";
+import RegisterStudent from "./components/RegisterStudent";
+import RegisterTrainer from "./components/RegisterTrainer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import JoinUsTrainer from "./components/JoinUsTrainer";
+import JoinUsStudent from "./components/JoinUsStudent";
+import Box from "./components/Box";
+import MyAccountStudent from "./components/MyAccountStudent";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <Header />
+      <div className="w-full flex items-center justify-center">
+        {/* <LoginForm /> */}
+        {/* <RegisterTrainer /> */}
+        {/* <RegisterStudent /> */}
+        {/* <JoinUsTrainer />
+        <JoinUsStudent /> */}
+        {/* <Box tag="some tag" title="Some Titile" description="Some desctiprion" image="/images/Image 135.jpg" /> */}
+        <MyAccountStudent />
+      </div>
+      <Footer />
+      
     </div>
   );
 }
