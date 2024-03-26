@@ -7,6 +7,7 @@ import JoinUsTrainer from "./components/JoinUsTrainer";
 import JoinUsStudent from "./components/JoinUsStudent";
 import Box from "./components/Box";
 import MyAccountStudent from "./components/MyAccountStudent";
+import EditMyProfileStudent from "./components/EditMyProfileStudent";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <JoinUsStudent /> */}
         {/* <Box tag="some tag" title="Some Titile" description="Some desctiprion" image="/images/Image 135.jpg" /> */}
         <MyAccountStudent />
+        {/* <EditMyProfileStudent /> */}
       </div>
       <Footer />
       
