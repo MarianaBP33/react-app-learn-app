@@ -3,28 +3,25 @@ import RegisterStudent from "./components/RegisterStudent";
 import RegisterTrainer from "./components/RegisterTrainer";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import JoinUsTrainer from "./components/JoinUsTrainer";
-import JoinUsStudent from "./components/JoinUsStudent";
-import Box from "./components/Box";
 import MyAccountStudent from "./components/MyAccountStudent";
+import JoinUs from "./components/JoinUs";
 import EditMyProfileStudent from "./components/EditMyProfileStudent";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="">
+    <div >
       <Header />
-      <div className="w-full flex items-center justify-center">
-        {/* <LoginForm /> */}
-        {/* <RegisterTrainer /> */}
-        {/* <RegisterStudent /> */}
-        {/* <JoinUsTrainer />
-        <JoinUsStudent /> */}
-        {/* <Box tag="some tag" title="Some Titile" description="Some desctiprion" image="/images/Image 135.jpg" /> */}
-        <MyAccountStudent />
-        {/* <EditMyProfileStudent /> */}
-      </div>
+      <Routes >
+      <Route path="/" element={<LoginForm />}/>
+      <Route path="/login" element={<LoginForm />}/>
+      <Route path="/registrationStudent" element={<RegisterStudent />} />
+      <Route path="/registrationTrainer" element={<RegisterTrainer />} />
+      <Route path="/joinUs" element={<JoinUs />} />
+      <Route path="/myAccountStudent" element={<MyAccountStudent />} />
+      <Route path="/editProfileStudent" element={<EditMyProfileStudent />} />
+      </Routes>
       <Footer />
-      
     </div>
   );
 }

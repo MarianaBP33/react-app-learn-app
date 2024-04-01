@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
     const [username, setUsername] = useState('');
@@ -19,12 +20,12 @@ export default function LoginForm() {
         }, 2000);
     }
     return (
-        <div>
+        <div className=" flex flex-col items-center justify-center mt-8">
             <h1 className="text-4xl font-bold">Sign In</h1>
             <p className='font-medium text-md text-gray-500 mt-4' >Welcome Back</p>
             <div className='mt-8'>
                 <form onSubmit={handleSubmit}>
-                    <div>
+                    <div >
                         <label className='text-lg font-medium'>Username</label>
                         <input
                             className='w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-gray-100'
@@ -58,7 +59,7 @@ export default function LoginForm() {
                 </div>
                 <div className='mt-4 flex justify-between items-center p-4'>
                     <label>Don't have an account?</label>
-                    <button className='font-medium text-base text-violet-500'>Sign Up</button>
+                     <Link className='font-medium text-base text-violet-500' to="/joinUs">Sign Up</Link>
                 </div>
             </div>
         </div>

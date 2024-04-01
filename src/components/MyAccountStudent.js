@@ -1,12 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import BasicTable from "./BasicTable";
 
 const MyAccountStudent = () => {
     return (
         <div className="w-full text-center mb-8">
-        <h1 className="text-4xl font-bold">My Account</h1>
-        <div className="flex items-center justify-center w-full">
+        <h1 className="text-4xl font-bold mt-6">My Account</h1>
+        <div className="flex flex-col sm:flex-row items-center justify-center w-full">
         <div className="flex-1 text-left ml-5">
-            <h2 className="text-2xl font-bold mb-4">My Profile</h2>
+            <h2 className="text-2xl font-bold mb-4 mt-8">My Profile</h2>
             <div className="mb-4 flex items-center">
                 <img src="/images/Avatar 6.jpg" alt="Profile" className="h-8 mr-4" style={{ width: '100px', height: '100px' }} />
                 <div className="text-left">
@@ -50,13 +52,13 @@ const MyAccountStudent = () => {
             </div>
                     </div>
                     <div className="flex">
-                        <button className="bg-violet-500 hover:bg-violet-600 text-white mr-3 px-4 py-2 rounded-md">Edit Profile</button>
+                        <Link to="/editProfileStudent" className="bg-violet-500 hover:bg-violet-600 text-white mr-3 px-4 py-2 rounded-md">Edit Profile</Link>
                         <button className="bg-teal-500 hover:bg-teal-600 text-white ml-3 px-4 py-2 rounded-md">Change Password</button>
                     </div>
         </div>
         {/* My Trainers */}
-        <div className="flex-1">
-            <h2 className="ml-8">My Trainers</h2>
+         <div className="flex-1 text-left ml-5">
+            <BasicTable />
         </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const EditMyProfileStudent = () => {
     return (
@@ -46,8 +47,7 @@ const EditMyProfileStudent = () => {
                             <input placeholder="Mariana.b@gmail.com" />
                         </div>
                         <div className="flex mt-4">
-                            <button className="bg-violet-500 hover:bg-violet-600 text-white mr-3 px-4 py-2 rounded-md">Edit Profile</button>
-                            <button className="bg-teal-500 hover:bg-teal-600 text-white ml-3 px-4 py-2 rounded-md">Change Password</button>
+                            <Link to="/myAccountStudent"className="bg-green-500 hover:bg-green-600 text-white mr-3 px-4 py-2 rounded-md">Save Profile</Link>
                         </div>
                     </div>
                  </div>
