@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,7 +47,7 @@ const Header = () => {
                 <a href="/blog" className="hover:text-violet-500 p-2">Blog</a>
                 <a href="/pricing" className="hover:text-violet-500 p-2">Pricing</a>
                 <a href="/about" className="hover:text-violet-500 p-2">About Us</a>
-                <a href="/account" className="hover:text-violet-500 p-2">My Account</a>
+                <Link to="/myAccountStudent" className="hover:text-violet-500 p-2">My Account</Link>
                 </div>
             </nav>
             </div>

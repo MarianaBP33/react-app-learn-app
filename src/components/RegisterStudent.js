@@ -20,14 +20,14 @@ export default function RegisterStudent() {
         }, 2000);
     }
     return (
-        <div className='flex flex-col justify-center h-screen'>
+        <div className='flex flex-col justify-center h-fit ml-5 mt-5 mb-5' >
             <h1 className="text-4xl font-bold">Registration</h1>
             <p className='font-medium text-md text-gray-500 mt-4' >Student</p>
                <div className='lg:flex lg:items-center lg:justify-between w-full mt-4'>
                 <div className='lg:w-1/2'>
-                    <img src="/images/registrationImage.jpg" alt="registration" className="hidden lg:block w-full" />
+                    <img src="/images/registrationImage.jpg" alt="registration" style={{ width: '450px', height: '600px' }}  className="hidden lg:block w-full" />
                 </div>
-                <div className='mt-8 w-full lg:mt-0 lg:w-1/2 lg:pl-8'>
+                <div className='mt-8 w-full lg:mt-0 lg:w-1/2 lg:pl-8 flex items-start justify-start'>
                     <form onSubmit={handleSubmit}>
                         <div className='mt-2'>
                             <label className='text-lg font-medium'>First Name</label>
