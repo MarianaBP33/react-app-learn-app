@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BasicTable from "./BasicTable";
+import BasicTable from "../../BasicTable";
 
 const MyAccountStudent = () => {
     return (

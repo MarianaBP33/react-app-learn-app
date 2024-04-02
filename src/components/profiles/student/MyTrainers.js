@@ -1,5 +1,5 @@
 import React from 'react';
-import Table from './BasicTable';
+import Table from '../../BasicTable';
 
 // users model
 // const users = [

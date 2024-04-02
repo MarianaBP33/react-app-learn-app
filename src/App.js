@@ -1,11 +1,11 @@
-import LoginForm from "./components/LoginForm";
-import RegisterStudent from "./components/RegisterStudent";
-import RegisterTrainer from "./components/RegisterTrainer";
+import LoginForm from "./components/auth/LoginForm";
+import RegisterStudent from "./components/auth/RegisterStudent";
+import RegisterTrainer from "./components/auth/RegisterTrainer";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
-import MyAccountStudent from "./components/MyAccountStudent";
-import JoinUs from "./components/JoinUs";
-import EditMyProfileStudent from "./components/EditMyProfileStudent";
+import Footer from "./components/footer/Footer";
+import MyAccountStudent from "./components/profiles/student/MyAccountStudent";
+import JoinUs from "./components/joinUs/JoinUs";
+import EditMyProfileStudent from "./components/profiles/student/EditMyProfileStudent";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
