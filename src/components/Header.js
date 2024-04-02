@@ -32,7 +32,6 @@ const Header = () => {
           </button>
         </div>
       </div>
-      {/* Mobile Menu */}
       {menuOpen && (
        <div className="md:hidden bg-white py-2 ml-4">
             <nav className="flex flex-col space-y-2">
