@@ -4,7 +4,7 @@ export default function RegisterTrainer() {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
-    const [specialization, setSpecialization] = useState(''); // State for specialization
+    const [specialization, setSpecialization] = useState('');
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 

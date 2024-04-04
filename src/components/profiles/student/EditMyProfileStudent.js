@@ -1,7 +1,37 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 
 const EditMyProfileStudent = () => {
+    const [firstName, setFirstName] = useState('Mariana');
+    const [lastName, setLastName] = useState('Bojorquez');
+    const [username, setUsername] = useState('mariana.bojorquez');
+    const [dateOfBirth, setDateOfBirth] = useState('11.10.2001');
+    const [address, setAddress] = useState('street 123, city, country');
+    const [email, setEmail] = useState('mariana.bp.33@gmail.com');
+
+    function handleOnChangeFirstName(e) {
+        setFirstName(e.target.value);
+    }
+
+    function handleOnChangeLastName(e) {
+        setLastName(e.target.value);
+    }
+
+    function handleOnChangeEmail(e) {
+        setEmail(e.target.value);
+    }
+
+    function handleOnChangeUsername(e) {
+        setUsername(e.target.value);
+    }
+
+    function handleOnChangeAddress(e) {
+        setAddress(e.target.value);
+    }
+
+    function handleOnChangeDate(e) {
+        setDateOfBirth(e.target.value);
+    }
     return (
         <div className="w-full text-center mb-8">
         <h1 className="text-4xl font-bold">My Account</h1>
@@ -24,34 +54,33 @@ const EditMyProfileStudent = () => {
                     <div className="mb-4 py-2">
                     <div className="mt-2 flex flex-col">
                             <label className="font-bold">First Name</label>
-                            <input placeholder="Mariana" />
+                            <input placeholder={firstName} onChange={handleOnChangeFirstName} type="text"/>
                         </div>
                         <div className="mt-2 flex flex-col">
                             <label className="font-bold">Last Name</label>
-                            <input placeholder="Bojorquez" />
+                            <input placeholder={lastName} onChange={handleOnChangeLastName }type="text"/>
                         </div>
                     <div className="mt-2 flex flex-col">
                             <label className="font-bold">Username</label>
-                            <input placeholder="Mariana.bojorquez" />
+                            <input placeholder={username} onChange={handleOnChangeUsername} type="text" disabled/>
                         </div>
                     <div className="mt-2 flex flex-col">
                             <label className="font-bold">Date of birth</label>
-                            <input placeholder="11.10.2001" />
+                            <input placeholder={dateOfBirth} onChange={ handleOnChangeDate}type="date"/>
                         </div>
                      <div className="mt-2 flex flex-col">
                             <label className="font-bold">Address</label>
-                            <input placeholder="Somewhere ..." />
+                            <input placeholder={address} onChange={handleOnChangeAddress}  type="text"/>
                         </div>
                     <div className="mt-2 flex flex-col">
                             <label className="font-bold">Email</label>
-                            <input placeholder="Mariana.b@gmail.com" />
+                            <input placeholder={email} onChange={handleOnChangeEmail} type="text" />
                         </div>
                         <div className="flex mt-4">
                             <Link to="/myAccountStudent"className="bg-green-500 hover:bg-green-600 text-white mr-3 px-4 py-2 rounded-md">Save Profile</Link>
                         </div>
                     </div>
                  </div>
-        {/* My Trainers */}
         <div className="flex-1">
             <h2 className="ml-8">My Trainers</h2>
         </div>

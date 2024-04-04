@@ -17,7 +17,15 @@ export default function LoginForm() {
             setLoading(false);
             setUsername('');
             setPassword('');
-        }, 2000);
+        }, 1000);
+    }
+
+    function handleOnChangeUsername(e) {
+        setUsername(e.target.value)
+        
+    }
+    function handleOnChangePassword(e) {
+        setPassword(e.target.value)        
     }
     return (
         <div className=" flex flex-col items-center justify-center mt-8">
@@ -31,7 +39,7 @@ export default function LoginForm() {
                             className='w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-gray-100'
                             placeholder='Enter email'
                             value={username}
-                            onChange={(e) => setUsername(e.target.value)}></input>
+                            onChange={handleOnChangeUsername}></input>
                     </div>
                     <div>
                         <label className='text-lg font-medium'>Password</label>
@@ -40,7 +48,7 @@ export default function LoginForm() {
                             placeholder='Enter password'
                             type="password"
                             value={password}
-                            onChange={(e) => setPassword(e.target.value)}></input>
+                            onChange={handleOnChangePassword}></input>
                     </div>
                     {error && <p className='text-red-500 text-.sm mt2'> {error}</p>}
                     <div className='mt-8 flex items-center justify-center'>
