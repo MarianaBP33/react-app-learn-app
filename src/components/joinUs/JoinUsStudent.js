@@ -17,7 +17,7 @@ const JoinUsStudent = () => {
       <div className="flex-1 pl-4">
         <img src="/images/Image 41.jpg" alt="Community" className="w-full h-auto rounded-lg" />
       </div>
-    </div>
+      </div>
   );
 };
 
