@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Breadcrumb from '../Breadcrumb';
 
 export default function RegisterTrainer() {
     const [firstName, setFirstName] = useState('');
@@ -23,6 +24,7 @@ export default function RegisterTrainer() {
     }
     return (
         <div className='flex flex-col justify-center h-fit ml-5 mb-5'>
+            <Breadcrumb />
             <h1 className="text-4xl font-bold">Registration</h1>
             <p className='font-medium text-md text-gray-500 mt-4' >Trainer</p>
                <div className='lg:flex lg:items-center lg:justify-between w-full mt-4'>
